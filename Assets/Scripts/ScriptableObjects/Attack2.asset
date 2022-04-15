@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8faa5c02ebae04cb4c71172a7d5a4f, type: 3}
+  m_Name: Attack2
+  m_EditorClassIdentifier: 
+  NumberOfColumns: 5
+  Speed: 5
+  Lifetime: 5
+  Firerate: 0.3
+  Size: 0.7
+  SpinSpeed: 30
+  Duration: 8
+  StartDelay: 0
+  Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  Color: {r: 0, g: 0.78241277, b: 1, a: 1}
+  Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
