@@ -61,8 +61,9 @@ public class ParticleSpawner : MonoBehaviour
         }
 
         // Every 2 secs we will emit.
-        InvokeRepeating("DoEmit", Info.StartDelay, Info.Firerate);
+        InvokeRepeating("DoEmit", Info.StartDelay, Info.FireRate);
         Invoke("StopSpawningParticles", Info.Duration);
+        Manager.Invoke("ParticleEnded", Info.Duration * Info.PercentCompleteUntilNext);
     }
 
     void DoEmit()
@@ -86,7 +87,7 @@ public class ParticleSpawner : MonoBehaviour
     private void StopSpawningParticles()
     {
         CancelInvoke("DoEmit");
-        Manager.ParticleEnded();
+        //Manager.ParticleEnded();
         Destroy(gameObject, 5f);
     }
 }

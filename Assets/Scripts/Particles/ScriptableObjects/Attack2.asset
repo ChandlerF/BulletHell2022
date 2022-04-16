@@ -15,11 +15,12 @@ MonoBehaviour:
   NumberOfColumns: 5
   Speed: 5
   Lifetime: 5
-  Firerate: 0.3
+  FireRate: 0.1
   Size: 0.7
   SpinSpeed: 30
   Duration: 8
   StartDelay: 0
+  PercentCompleteUntilNext: 1
   Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   Color: {r: 0, g: 0.78241277, b: 1, a: 1}
   Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}

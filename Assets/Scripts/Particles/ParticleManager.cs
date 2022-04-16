@@ -30,7 +30,7 @@ public class ParticleManager : MonoBehaviour
         _spawnedSpanwer.AddComponent<ParticleSpawner>().Info = particleList[index];
         _spawnedSpanwer.GetComponent<ParticleSpawner>().Manager = this;
         _spawnedSpanwer.transform.SetParent(transform);
-        _spawnedSpanwer.transform.position = Vector3.zero;
+        _spawnedSpanwer.transform.position = transform.position;
 
         index ++;
     }
